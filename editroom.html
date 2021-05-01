@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"content= "width=device-width, initial-scale=1.0">
+      <title>
+        Edit Room
+      </title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="content">
+      <nav class="navbar">
+        <a href=./uowlanding.html>
+          <img class="logo" src="logo_uow_blue.png" alt="University of Wollongong logo">
+        </a>
+        <ul>
+          <li><a href="./uowlanding.html#content">Home</a></li>
+          <li><a href="./uowlanding.html#about">About</a></li>
+          <li><a href="./uowlanding.html#team">Team</a></li>
+          <li><a href="./uowlanding.html#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="editroombody">
+        <div class="editroom"> 
+          <h1><b>Edit Room</b></h1>
+        </div> 
+        <div class="dropdown">
+          <form action="#">
+            <div class="roomdetails">
+              <label for="availablerooms"><h2>Available Room List:</h2></label>
+              <div class="dropbtn">
+                <select name="availablerooms" required>
+                  <option disabled selected>Select a room</option>
+                  <option value="banana">RoomBanana</option>
+                  <option value="apple">RoomApple</option>
+                  <option value="kiwi">RoomKiwi</option>
+                  <option value="pear">RoomPear</option>
+                  <option value="durian">RoomDurian</option>
+                </select>
+              </div>
+              <div class="inputbox">
+                <span class="details"><h2>Enter New Capacity (Optional)</h2></span>
+                <input type="text" placeholder="Enter Room Capacity">
+              </div>
+              <div class="inputdate">
+                <span class="details"><h2>Select New Date (Optional)</h2></span>
+                <input type="date">
+              </div><br>
+              <div class="time-details">
+                <span class="time-title"><h2>Select New Time (Optional)</h2></span>
+                <div class="dropbtn">
+                  <select name="timeslots">
+                    <option disabled selected>Select a timeslot</option>
+                    <option value="9-12">9:00-11:59</option>
+                    <option value="12-15">12:00-14:59</option>
+                    <option value="15-18">15:00-17:59</option>
+                  </select>
+                </div>
+              </div><br>
+              
+              <input type="radio" id="launch" name="editroomradiobtn" value="launchroom">
+              <label for="launch">Launch Room</label><br><br>
+              
+              <input type="radio" id="close" name="editroomradiobtn"value="closeroom">
+              <label for="close">Close Room</label><br><br>
+              <h>Quoted Price Per timeslot: S$8</h><br>
+              <div class="confirmbtn">
+                <input type="submit" value="Submit" onclick='window.location.href="./editsuccess.html"'>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>      
+
+
+        

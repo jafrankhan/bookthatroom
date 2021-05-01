@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"content= "width=device-width, initial-scale=1.0">
+      <title>
+         Student Login
+      </title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="content">
+      <nav class="navbar">
+        <a href=./uowlanding.html>
+          <img class="logo" src="logo_uow_blue.png" alt="University of Wollongong logo">
+        </a>
+        <ul>
+          <li><a href="./uowlanding.html#content">Home</a></li>
+          <li><a href="./uowlanding.html#about">About</a></li>
+          <li><a href="./uowlanding.html#team">Team</a></li>
+          <li><a href="./uowlanding.html#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="signinbody">
+        <div class="signinform">
+          <form action="./students.html" method="post">
+            <h1>Student Login</h1><br>
+            <label for="username">UOW Student ID:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd" minlength="8"><br>
+            <input type="checkbox" id="check">
+            <span>Remember me</span>
+            <br><br>    
+            <input type="submit" value="Confirm">
+          </form>
+        </div>
+    </div>  
+  </body>
+</html>

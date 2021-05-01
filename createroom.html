@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"content= "width=device-width, initial-scale=1.0">
+      <title>
+         Create Room
+      </title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="content">
+      <nav class="navbar">
+        <a href=./uowlanding.html>
+          <img class="logo" src="logo_uow_blue.png" alt="University of Wollongong logo">
+        </a>
+        <ul>
+          <li><a href="./uowlanding.html#content">Home</a></li>
+          <li><a href="./uowlanding.html#about">About</a></li>
+          <li><a href="./uowlanding.html#team">Team</a></li>
+          <li><a href="./uowlanding.html#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="createroombody">
+        <div class="create">
+          <h1><b>Create Room</b></h1>
+        </div>
+        <div class="dropdown">
+          <form action="#">
+            <div class="roomdetails">
+              <div class="inputbox">
+                <span class="details"><h2>Room ID</h2></span>
+                <input type="text" placeholder="Enter Room ID" required>
+              </div>
+              <div class="inputbox">
+                <span class="details"><h2>Capacity</h2></span>
+                <input type="text" placeholder="Enter Room Capacity" required>
+              </div>
+              <!--
+              <div class="inputbox">
+                <span class="details">Price</span>
+                <input type="text" placeholder="Enter Room Price (SGD)" required>
+              </div> -->
+              <div class="inputdate">
+                <span class="details"><h2>Date</h2></span>
+                <input type="date" required>
+              </div><br>
+              <div class="time-details">
+                <span class="time-title"><h2>Time</h2></span>
+                <div class="dropbtn">
+                  <select name="timeslots" required>
+                    <option disabled selected>Select a timeslot</option>
+                    <option value="9-12">9:00-11:59</option>
+                    <option value="12-15">12:00-14:59</option>
+                    <option value="15-18">15:00-17:59</option>
+                  </select>
+                </div>
+              </div><br>
+            <h2>Quoted Price Per timeslot: S$8</h2>
+            <div class="confirmbtn">
+              <input type="submit" value="Submit" onclick='window.location.href="./createsuccess.html"'>
+            </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>      

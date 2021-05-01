@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+*{
+    scroll-behavior:smooth;
+    margin: 0;
+    padding: 0;
+}
+#my{
+    zoom: 77%;
+}
+.body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.content {
+    background: url(campus2.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.login{
+    font-family: 'Raleway',sans-serif;
+}
+.navbar{
+    height: 150px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.75)
+}
+.logo{
+    width: 300px;
+    height: auto;
+    padding: 30px 100px;
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+    text-indent: 35px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:rgb(0, 0, 100);
+    font-size: 1.5vw;
+    font-family: 'Raleway',sans-serif;
+    font-weight: bolder;
+    padding: 15px 17px;
+    position:relative;
+    top:30px;
+    transition:0.4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background:rgb(0, 0, 100);
+    border-radius:50px;
+    color: white;
+}
+.content .login{
+    position:absolute;
+    top: 50%;
+    left:55%;
+    transform: translate(-50%, -50%);
+}
+.login h1{
+    color:white;
+    font-size: 60px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+.login h2{
+    color:white;
+    font-size:30px;
+    width:900px;
+    text-align: center;
+    font-style:italic;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+.login .buttons{
+    margin:30px 150px;
+}
+.buttons button{
+    height:190px;
+    width:190px;
+    font-size: 40px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: bold;
+    background:rgb(255, 167, 36);
+    color:rgb(0, 0, 100);
+    border-radius: 100px;
+    outline:none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.buttons .second{
+    margin-left: 80px;
+}
+.buttons button:hover{
+    background:#ff5e00;
+}
+.about{
+    background: rgb(0, 0, 100);
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    height: 500px;
+    display:inline-block;
+    width:100%;
+    text-align: center;
+    position:relative;
+    top:600px;
+    font-size:27px;
+}
+.team{
+    background:url(meeting15.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    top:600px;
+    width:50%;
+    position:relative;
+    height:800px;
+    float: left;
+}
+.teamid{
+    text-align: center;
+    font-size:1.5em;
+    font-family:'Raleway', sans-serif;
+    width:50%;
+    color:rgb(0, 0, 100);
+    font-style: bold;
+    height: 800px;
+    float: right;
+    position:relative;
+    top:600px;
+    list-style-position: inside;
+}
+
+.contact{
+    background: rgb(0, 0, 100);
+    color: white;
+    font-family:'Raleway', sans-serif;
+    height: 650px;
+    width:50%;
+    text-align:center;
+    position:relative;
+    top:600px;
+    float:left;
+    font-size:1.5em;
+}
+.uowlink{
+    color: orange;
+}
+.contactpt{
+    background:url(feedback2.jpg)no-repeat;
+    width: 50%;
+    height:650px;
+    position:relative;
+    float: right;
+    top:600px;
+    background-attachment: fixed;
+    background-position-x: right;
+    background-position-y:bottom;
+}
+.footer{
+    background: rgb(70, 70, 70);
+    font-size: 15px;
+    text-align: left;
+    height:20px;
+    position:relative;
+    display:inline-block;
+    top: 600px;
+    width: 100%;
+    color: orange;
+    font-family: 'Raleway',sans-serif;
+    padding-top: 5px;
+}
+
+.staff{ 
+    position:absolute;
+    top: 30%;
+    left:51%;
+    transform: translate(-50%, -50%);
+    background:rgb(255, 255, 255, 0.8);
+    font-family: 'Raleway',sans-serif;
+    font-size: 25px;
+    color:rgb(0, 0, 100);
+    width:25%;
+    text-align: center;
+    padding:13px 15px;
+}
+
+.staffnav{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+
+.staffnav button{
+    height:100px;
+    width:300px;
+    font-size: 30px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: bold;
+    background:rgb(0, 0, 100);
+    color:white;
+    border-radius: 100px;
+    outline:none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+/*
+.staffnav .staffbtn{
+    margin-bottom: 80px;
+}*/
+
+.staffnav button:hover{
+    background:#4400ff;
+} 
+
+.createroombody{
+    position:absolute;
+    top:29vw;
+    left:51%;
+    transform: translate(-50%, -50%);
+    background:rgba(255, 255, 255, 0.8);
+    font-family: 'Raleway',sans-serif;
+    color:rgb(0, 0, 100);
+    width:55%;
+}
+.roomdetails{
+    background-color:rgb(0, 0, 100);
+    color:white;
+    padding: 16px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+.createsuccessbody{
+    position:absolute;
+    top: 40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background:rgb(255, 255, 255, 0.8);
+    font-family: 'Raleway',sans-serif;
+    font-size: 1.5vw;
+    color:rgb(0, 0, 100);
+    width:50%;
+    text-align: center;
+    padding:10px 10px;
+}
+.staffback{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+.staffback button{
+    height:100px;
+    width:200px;
+    font-size: 30px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: bold;
+    background:rgb(0, 0, 100);
+    color:white;
+    border-radius: 100px;
+    outline:none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.staffback button:hover{
+    background:#4400ff;
+} 
+
+.editroombody{
+    position:absolute;
+    top:31vw;
+    left:51%;
+    transform: translate(-50%, -50%);
+    background:rgba(255, 255, 255, 0.8);
+    font-family: 'Raleway',sans-serif;
+    color:rgb(0, 0, 100);
+    width:55%;
+}
+
+.studentbody{
+    position:absolute;
+    top:55vw;
+    left:51%;
+    transform: translate(-50%, -50%);
+    background:rgba(255, 255, 255, 0.8);
+    font-family: 'Raleway',sans-serif;
+    color:rgb(0, 0, 100);
+    width:55%;
+}
+.studentform{
+    background-color:rgb(0, 0, 100);
+    color:white;
+    padding: 16px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+.studentheader{ 
+    font-size:1.1em;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: orange;
+    color:rgb(0, 0, 100);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: black;
+    color: white;
+}
+.dropbtn:hover{
+    background-color:rgb(0, 0, 100);
+    color: rgb(0, 0, 100);
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+input[type=number]:focus {
+    border: 3px solid #555;
+}
+.modbookbtn button{
+    height:50px;
+    width:300px;
+    font-size: 1.5em;
+    font-family: 'Raleway',sans-serif;
+    font-weight: bold;
+    background:rgb(255, 167, 36);
+    color:rgb(0, 0, 100);
+    border-radius: 10px;
+    outline:none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.modbookbtn button:hover{
+    background:#ff5e00;
+} 
+.stdrules {
+    width:90%;
+    list-style-position: inside;
+}
+.contactlink{
+    color:orange;
+}
+.stdcontent{
+    background: url(campus2.jpg) no-repeat;
+    background-size: cover;
+    height: 200vh;
+    margin: 0;
+    padding: 0;
+}
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.signinform{
+    background-color:rgb(0, 0, 100);
+    color:white;
+    padding: 16px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+.signinbody{
+    position:absolute;
+    top:28vw;
+    left:51%;
+    transform: translate(-50%, -50%);
+    background:rgba(255, 255, 255, 0.8);
+    font-family: 'Raleway',sans-serif;
+    color:rgb(0, 0, 100);
+    width:40%;
+}

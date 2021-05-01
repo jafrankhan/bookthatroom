@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"content= "width=device-width, initial-scale=1.0">
+      <title>
+         Students
+      </title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="stdcontent">
+      <nav class="navbar">
+        <a href=./uowlanding.html>
+          <img class="logo" src="logo_uow_blue.png" alt="University of Wollongong logo">
+        </a>
+        <ul>
+          <li><a href="./uowlanding.html#content">Home</a></li>
+          <li><a href="./uowlanding.html#about">About</a></li>
+          <li><a href="./uowlanding.html#team">Team</a></li>
+          <li><a href="./uowlanding.html#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="studentbody">
+      <span class="studentheader">
+        <label><h1>Fill out this form below to reserve a study room<br>or view and modify/cancel your booking here:</h1></label>
+      </span>
+      <div class="modbookbtn">
+        <button onclick='window.location.href = "./modifybooking.html"'>Modify/Cancel Booking</button>
+      </div>
+      <br>
+      <form>
+        <div class="studentform" id="studentform">
+          <label for="availablerooms"><h2>Available Room List:</h2></label>
+          <div class="dropbtn">
+            <select name="availablerooms" required>
+              <option disabled selected>Select a room</option>
+              <option value="banana">RoomBanana</option>
+              <option value="apple">RoomApple</option>
+              <option value="kiwi">RoomKiwi</option>
+              <option value="pear">RoomPear</option>
+              <option value="durian">RoomDurian</option>
+            </select>
+          </div>
+          <br>
+          <label for="timeslots"><h2>Available Time Slots:</h2></label>
+          <div class="dropbtn">
+            <select name="timeslots" required>
+              <option disabled selected>Select a timeslot</option>
+              <option value="9-12">9:00-11:59</option>
+              <option value="12-15">12:00-14:59</option>
+              <option value="15-18">15:00-17:59</option>
+            </select>
+          </div> 
+          <br>
+          <label for="datepicked"><h2>Pick a date:</h2></label>
+          <input type="date" id="datepicked" name="date" required>
+          <br><br>
+          <Label for="studentid"><h2>Student ID:</h2></Label>
+          <input type="number" id="studentid" name="studentid" placeholder="7314321" min="1000000" max="9999999" required>
+          <br><br>
+          <label for="contactno"><h2>Contact No:</h2></label>
+          <input type="number" id="contactno" name="contactno" placeholder="5224 9029" min="10000000" max="99999999" required>
+          <br><br>
+          <h2>Quoted Price Per timeslot: S$8</h2>
+          <br>
+          <h2>Payment Method: Cash over counter</h2>
+          <br>
+          <h2>Room Booking Rules:</h2>
+          <div class="stdrules">
+            <ul>
+              <li><b>Student ID card should be available during the entire booking.</b></li>
+              <li><b>Room booking request should be made minimum of <b>30 minutes</b> and maximum <b>one day</b> in advance from the preferred time.</b></li>
+              <li><b>Room booking confirmation will be sent to your UOWmail address</b> within a day - 30 mins prior to your preferred time.</li>
+              <li>Room booking confirmation must be presented to Security and IT office for IT assistance before using the allotted room.</li>
+              <li>Only one room booking request at a time is allowed for each group.</li>
+              <li>The following is strictly prohibited: playing loud music or any noise which may disrupt classes, unplugging of electric plugs or wires. The room should be left tidy at all times.</li>
+              <li>For further queries or to check availability of the rooms contact us <a class="contactlink" href="./uowlanding.html#contact">here.</a></li>
+            </ul>
+          </div>
+          <input type="submit" value="Confirm Reservation" onclick='window.location.href="./booksuccess.html"'>
+          <br>
+        </div>
+      </form>
+    </div>
+    
